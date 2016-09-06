@@ -21,8 +21,8 @@
             $cause = $player->getLastDamageCause();
                 $killer = $cause->getDamager();
             if($killer instanceof Player){
-        $this->api->addMoney($killer->getName(),50);
-                $killer->sendMessage("You have earned $50 for killing a player!");
+        $this->api->addMoney($killer->getName(),25);
+                $killer->sendMessage("§7(§6Kingdom§7) §bYou killed a player and got §a25 Tokens§b! Awesome!");
             }
       }
       }
